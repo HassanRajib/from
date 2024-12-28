@@ -1,0 +1,18 @@
+.main_body{
+    background-color: white;
+    margin-left: 160px;
+    margin-right: 160px;
+}
+
+.main_top{
+    display: flex;
+    margin-top: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.mbtoca{
+    display: flex;
+    align-items: center;
+}

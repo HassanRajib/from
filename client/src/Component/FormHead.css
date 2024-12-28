@@ -1,0 +1,22 @@
+.formhd{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.formhdle{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.form_name{
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-left: 15px;
+    color: #202124;
+    width: 120px;
+}

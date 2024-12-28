@@ -1,0 +1,49 @@
+.tamplate_sec{
+    background-color: #f4f4f9;
+    padding-bottom: 40px;
+    padding-top: 7;
+}
+
+.tamplate_top{
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.template_body{
+    margin-left: 160px;
+    margin-right: 160px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    
+}
+
+.card{
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.card_im{
+    box-sizing: border-box;
+    height: 120px;
+    width: 140px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 0.2px solid #fffdf7;
+}
+
+.card_im:hover{
+    border: 1px solid #6e2594;
+}
+
+.card_ti{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}

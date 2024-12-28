@@ -1,0 +1,177 @@
+.qusForm {
+    background-color: #f4f4f9;
+    height: 100%;
+    padding: 30px;
+  }
+  
+  .section {
+    margin: auto;
+    width: 100%;
+    max-width: 900px; /* Set max-width to 900px */
+  }
+  
+  .qusFoTo {
+    background-color: white;
+    border-top: 8px solid rgb(103, 58, 183);
+    border-radius: 8px;
+    padding: 30px 25px;
+    text-transform: capitalize;
+  }
+  
+  .qusFoNa, .qusFoDe {
+    box-sizing: border-box;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #f4f4f9;
+    color: black;
+    height: 35px;
+    margin-top: 10px;
+  }
+  
+  .qusFoNa {
+    font-size: 32px;
+    font-weight: 400;
+  }
+  
+  .qusFoDe {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 40px;
+  }
+  
+  .qus-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .add-qus {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px 22px;
+    text-transform: capitalize;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 10px;
+  }
+  
+  .addquto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .quset {
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 40px;
+    width: 40%;
+    border: none;
+    outline: none;
+    color: black;
+    height: 40px;
+    margin-right: 40px;
+  }
+  
+  .quset:focus {
+    border-bottom: 1px solid rgb(103, 58, 183);
+    background-color: #f4f4f9;
+  }
+  
+  .addqubo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .select {
+    height: 40px;
+    width: 230px;
+    border: 0.5px solid #f4f4f9;
+    padding: 5px 10px;
+    color: black;
+    margin-left: 10px;
+    background: transparent;
+  }
+  
+  .text-input {
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 490px;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+  }
+  
+  .text-input:focus {
+    border-bottom: rgb(103, 58, 183);
+  }
+  
+  .adfo {
+    display: flex;
+    justify-content: flex-end; /* Align to the right */
+    margin-top: 15px;
+  }
+  
+  .save-button {
+    text-transform: none;
+    color: #4285f4;
+    font-size: 15px;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .saved {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .question-text {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  
+  .option-text {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    color: #202124;
+  }
+
+  .qusedit{
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding: 1px;
+    border-radius: 5px;
+    height: 180px;
+    width: 40px;
+  }
+  .edit{
+    color: #5f6368;
+    padding: 8px 5px;
+  }
+
+  .points{
+    box-sizing: border-box;
+   font-family: 'Google Sans', Roboto , Arial, sans-serif;
+   font-size: 15px;
+   font-weight: 400;
+   width:8%;
+   border:1px solid blue;
+   outline: none;
+   color: black;
+   height:40px;
+   margin-right: 10px;
+   line-height: 10px;
+   padding:4px;
+}

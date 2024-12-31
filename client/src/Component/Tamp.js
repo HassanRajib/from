@@ -8,7 +8,7 @@ function Tamp() {
     const history = useNavigate();
 
     const createForm = () => {
-        const id= uuid();
+        const id = uuid();
         
         history("/form/"+ id);
     }

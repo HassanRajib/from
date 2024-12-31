@@ -26,6 +26,8 @@ import TextFieldsIcon from "@mui/icons-material/TextFields";
 import { RxSwitch } from "react-icons/rx";
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 import { TfiHandDrag } from "react-icons/tfi";
+import axios from 'axios'
+import { useParams } from "react-router-dom";
 
 import "./Qus.css";
 
@@ -47,6 +49,9 @@ function Qus() {
       required: false,
     },
   ]);
+  const [documentName,setDocName] = useState("Untitled Doc")
+  const [documentDesc,setDocDesc] = useState("Untitled Desc")
+
 
   function changeQus(text, i) {
     var newQus = [...qus];
@@ -185,6 +190,16 @@ function Qus() {
     var ansQue = [...qus];
     ansQue[i].answer = !ansQue[i].answer;
     setQus(ansQue);
+  }
+
+  const {id}=useParams();
+
+  function comitToDB(){
+    axios.post(`http://localhost:3001/form/${id}`,{
+      "doc_name": documentName,
+      "doc_desc": documentDesc,
+      "qustion": qus,
+    })    
   }
 
   function qusUI() {
@@ -407,7 +422,7 @@ function Qus() {
                             <div style={{display:'flex'}} className="">
                               <div className="form_check">
                                 <label style={{fontSize:"13px"}} onClick={()=> {setOpAns(ques.options[j].optionText, i)}}>  
-                                {(ques.qusType!='text')?(
+                                {(ques.qusType!=='text')?(
                               <input type={ques.qusType} name={ques.qusText} value="option3" className="foChIn" required={ques.required} />):(  
                                <TextFieldsIcon/>)}
                                {ques.options[j].optionText}
@@ -460,11 +475,13 @@ function Qus() {
               type="text"
               className="qusFoNa"
               placeholder="Untitled document"
+              onChange={(e)=>{setDocName(e.target.value)}}
             />
             <input
               type="text"
               className="qusFoDe"
               placeholder="Form Description"
+              onChange={(e)=>setDocDesc(e.target.value)}
             />
           </div>
 
@@ -478,6 +495,9 @@ function Qus() {
               )}
             </Droppable>
           </DragDropContext>
+          <div className="save_form">
+            <Button variant="contained" color="primary" onClick={comitToDB} >save</Button>
+          </div>
         </div>
       </div>
     </div>
